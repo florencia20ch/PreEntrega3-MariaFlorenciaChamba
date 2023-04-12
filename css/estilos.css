@@ -1,0 +1,189 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400;500;700&display=swap');
+
+
+
+
+/*ESTILOS GENERALES*/
+/*Reset Css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* -----------------------------------------------------------------*/
+
+body {
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(15, 14, 13);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh; 
+}
+
+/* -----------------------------------------------------------------*/
+
+/*HEADER*/
+header {
+    background-color: #4D4C7D;
+    align-self: flex-start;
+    width: 100%;
+}
+
+/*Color a las letras de la lista */
+.d-flex nav ul li a  {
+    color: antiquewhite;
+}
+
+
+
+/* -----------------------------------------------------------------*/
+/*INDEX*/
+
+/*Contenido principal*/
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+/* -----------------------------------------------------------------*/
+
+/*PAGINA "QUIENES SOMOS" - "CLASES" - "PROMOCIONES"*/
+/*Nota: Por tema de tiempo se dio estilo de esta forma.*/
+
+
+/*================================================================*/
+/* ANIMACIONES BURBUJAS PAGINA PROMOCIONES*/
+/*================================================================*/
+.burbujas div {
+    background: #4D4C7D;
+    border-radius: 100%;
+    position: absolute; 
+    bottom: 0; 
+    animation: burbujitas 4s linear infinite;
+}
+
+.burbujas div:nth-child(1){
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    animation-duration: 4s;
+}
+
+.burbujas div:nth-child(2){
+    width: 45px;
+    height: 32px;
+    left: 20%;
+    animation-duration: 5s;
+}
+
+.burbujas div:nth-child(3){
+    width: 35px;
+    height: 32px;
+    left: 35%;
+    animation-duration: 5s;
+}
+.burbujas div:nth-child(4){
+    width: 50px;
+    height: 40px;
+    left: 50%;
+    animation-duration: 3s;
+}
+.burbujas div:nth-child(5){
+    width: 60px;
+    height: 50px;
+    left: 70%;
+    animation-duration: 5s;
+}
+.burbujas div:nth-child(6){
+    width: 40px;
+    height: 40px;
+    left: 95%;
+    animation-duration: 4s;
+}
+
+@keyframes burbujitas {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    3%{
+        width: 60px;
+        height: 60px;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 100vh;
+    }
+}
+/*================================================================*/
+
+.centrar {
+    padding: 100px;
+    text-align: center;
+}
+
+/* SLIDER - CLASES*/
+.carousel-inner {
+    max-height: 25rem;
+}
+
+
+/* -----------------------------------------------------------------*/
+
+/*PAGINA CONTACTO*/
+
+/* .menu {
+    padding-left: 300px;
+} */
+
+/* -----------------------------------------------------------------*/
+
+/*FOOTER*/
+
+footer {
+    background-color: #4D4C7D;
+    color: antiquewhite;  
+    align-self: flex-end;
+    width: 100%;
+}
+
+.iconos i {
+    font-size: 20px;
+    padding: 0 10px;
+    color: antiquewhite;
+}
+
+/*=====================================================================*/
+/*          MEDIA QUERIES*/
+/*=====================================================================*/
+
+/*Nota: Al utilizar en gran parte bootstrap, no es facil notar que no es responsive*/
+
+@media screen and (max-width: 576px) {
+
+    header{
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    header{
+        flex-wrap: wrap;
+    }
+    
+
+}
