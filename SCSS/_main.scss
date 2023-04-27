@@ -5,10 +5,12 @@ main {
     h2 {
         font-size: 30px;
     }
-
     .centrar {
-        padding: 100px;
+        margin: 10%;
+        padding: 50px;
         text-align: center;
+        background-color: $color-fondo-secundario;
+        opacity: 70%;
     }
 
     .carousel-inner {

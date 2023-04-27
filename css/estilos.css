@@ -25,8 +25,11 @@ main h2 {
   font-size: 30px;
 }
 main .centrar {
-  padding: 100px;
+  margin: 10%;
+  padding: 50px;
   text-align: center;
+  background-color: #EDE8DF;
+  opacity: 70%;
 }
 main .carousel-inner {
   max-height: 25rem;
