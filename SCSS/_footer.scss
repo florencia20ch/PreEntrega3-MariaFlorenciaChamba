@@ -1,0 +1,11 @@
+footer {
+    background-color: $color-fondo-principal;
+    color: $color-letras;  
+    align-self: flex-end;
+    width: 100%;
+    .iconos i {
+        font-size: 20px;
+        padding: 0 10px;
+        color: $color-letras;
+    }
+}

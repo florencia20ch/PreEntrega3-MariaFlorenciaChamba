@@ -7,4 +7,161 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: rgb(15, 14, 13);
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+main h1 {
+  font-size: 70px;
+}
+main h2 {
+  font-size: 40px;
+}
+main .centrar {
+  padding: 100px;
+  text-align: center;
+}
+main .carousel-inner {
+  max-height: 25rem;
+}
+
+header {
+  background-color: #4D4C7D;
+  align-self: flex-start;
+  width: 100%;
+}
+header .d-flex nav ul li a {
+  color: antiquewhite;
+}
+header .d-flex nav ul li a:hover {
+  color: antiquewhite;
+}
+
+.burbujas div {
+  background: #4D4C7D;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: burbujitas 4s linear infinite;
+}
+.burbujas div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  left: 8%;
+  animation-duration: 3s;
+}
+.burbujas div:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  left: 16%;
+  animation-duration: 4s;
+}
+.burbujas div:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 24%;
+  animation-duration: 5s;
+}
+.burbujas div:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 32%;
+  animation-duration: 6s;
+}
+.burbujas div:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 40%;
+  animation-duration: 7s;
+}
+.burbujas div:nth-child(6) {
+  width: 50px;
+  height: 50px;
+  left: 48%;
+  animation-duration: 8s;
+}
+.burbujas div:nth-child(7) {
+  width: 50px;
+  height: 50px;
+  left: 56%;
+  animation-duration: 9s;
+}
+.burbujas div:nth-child(8) {
+  width: 50px;
+  height: 50px;
+  left: 64%;
+  animation-duration: 10s;
+}
+.burbujas div:nth-child(9) {
+  width: 50px;
+  height: 50px;
+  left: 72%;
+  animation-duration: 11s;
+}
+.burbujas div:nth-child(10) {
+  width: 50px;
+  height: 50px;
+  left: 80%;
+  animation-duration: 12s;
+}
+.burbujas div:nth-child(11) {
+  width: 50px;
+  height: 50px;
+  left: 88%;
+  animation-duration: 13s;
+}
+.burbujas div:nth-child(12) {
+  width: 50px;
+  height: 50px;
+  left: 96%;
+  animation-duration: 14s;
+}
+
+@keyframes burbujitas {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  3% {
+    width: 60px;
+    height: 60px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+footer {
+  background-color: #4D4C7D;
+  color: antiquewhite;
+  align-self: flex-end;
+  width: 100%;
+}
+footer .iconos i {
+  font-size: 20px;
+  padding: 0 10px;
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,11 @@
+header {
+    background-color: $color-fondo-principal;
+    align-self: flex-start;
+    width: 100%;
+    .d-flex nav ul li a  {
+        color: $color-letras;
+        &:hover{
+            color: $color-letras;
+        }
+    }
+}
